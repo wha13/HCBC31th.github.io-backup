@@ -16,6 +16,15 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
 
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+      <div class="fb-comments"
+        data-href="https://hcbc31th.github.io/2023/08/24/hello-world/"
+        data-width="100%"
+        data-numposts="5"
+        data-order-by="reverse-time"
+        data-colorscheme="light"
+      ></div>
+    
 ]]></content>
   </entry>
 </search>
