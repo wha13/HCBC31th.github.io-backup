@@ -14,6 +14,6 @@ https://hcbc31th.github.io/test/index.html
 https://hcbc31th.github.io/friends/index.html
 https://hcbc31th.github.io/archives/index.html
 https://hcbc31th.github.io/
-https://hcbc31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/
 https://hcbc31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/
+https://hcbc31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/
 https://hcbc31th.github.io/categories/%E5%B9%B9%E4%BB%8B/
