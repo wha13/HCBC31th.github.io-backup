@@ -1,3 +1,4 @@
+https://hcbc31th.github.io/2023/10/31/%E5%9B%9B%E6%A0%A1%E4%BA%94%E7%A4%BE%E8%BF%8E%E6%96%B0/
 https://hcbc31th.github.io/2023/09/04/%E4%B8%89%E7%A4%BE%E5%B9%B9%E9%A3%AF/
 https://hcbc31th.github.io/2023/09/04/%E5%A4%8F%E6%97%A5%E3%80%81%E5%80%89%E9%BC%A0%E3%80%81%E4%B8%AD%E6%9A%91/
 https://hcbc31th.github.io/2023/09/04/%E5%B9%B9%E4%BB%8B-%E6%95%99%E5%AD%B8KUAN/
@@ -16,6 +17,6 @@ https://hcbc31th.github.io/test/index.html
 https://hcbc31th.github.io/friends/index.html
 https://hcbc31th.github.io/archives/index.html
 https://hcbc31th.github.io/
-https://hcbc31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/
 https://hcbc31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/
+https://hcbc31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/
 https://hcbc31th.github.io/categories/%E5%B9%B9%E4%BB%8B/
