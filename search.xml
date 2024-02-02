@@ -148,4 +148,93 @@
 <a class="link" href="https://www.instagram.com/explore/tags/%E7%AB%B9%E4%B8%AD%E7%94%9F%E7%A0%9431/">#竹中生研31 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>寒訓</title>
+    <url>/2024/02/01/post/</url>
+    <content><![CDATA[
+<div class="gallery">
+  <div class="resizer">RESIZE SCREEN</div>
+  <div class="items">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="pagination"></div>
+</div>
+  <script>
+let itms = 6; // itemsPerPage
+let stpg = 1; // startPage
+let pltd = 4; // pageLinksToDisplay
+let winw = window.innerWidth; 
+
+function optionsByWindowSize() {
+	winw = window.innerWidth;
+	if (winw > 1600) { itms = 6; stpg = 1; pltd = 4; }
+	else if (winw > 1230) { itms = 5; stpg = 2; pltd = 4; }
+	else if (winw > 980) { itms = 4; stpg = 3; pltd = 4; }
+	else if (winw > 750) { itms = 3; stpg = 4; pltd = 4; }
+	else if (winw > 510) { itms = 2; stpg = 5; pltd = 4; }
+	else { itms = 1; stpg = 6; pltd = 1; }
+}
+
+function reportWindowSize() {
+	optionsByWindowSize();
+	//purePajination Script - START
+	if (document.readyState === "complete") {
+		var gallery = new purePajinate({ 
+			containerSelector: '.items', 
+			itemSelector: '.items > div', 
+			navigationSelector: '.pagination',
+			/*wrapAround: true,*/ 
+			pageLinksToDisplay: pltd,
+			showFirstLast: true,
+			navLabelPrev: '&nbsp;&nbsp;&nbsp;',
+			navLabelNext: '&nbsp;&nbsp;&nbsp;',
+			navLabelFirst: '&nbsp;&nbsp;&nbsp;',
+			navLabelLast: '&nbsp;&nbsp;&nbsp;',
+			itemsPerPage: itms,
+			startPage: stpg
+		});
+	} //purePajination Script - END
+}
+
+document.onreadystatechange = reportWindowSize;				
+window.onresize = reportWindowSize;
+  </script>
+  
+]]></content>
+  </entry>
 </search>

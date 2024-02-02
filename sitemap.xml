@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hcbc31th.github.io/2024/02/01/post/</loc>
+    
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hcbc31th.github.io/2023/10/31/%E5%9B%9B%E6%A0%A1%E4%BA%94%E7%A4%BE%E8%BF%8E%E6%96%B0/</loc>
     
     <lastmod>2023-10-31</lastmod>
@@ -166,7 +175,7 @@
 
   <url>
     <loc>https://hcbc31th.github.io/</loc>
-    <lastmod>2024-01-02</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -174,14 +183,14 @@
   
   <url>
     <loc>https://hcbc31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/</loc>
-    <lastmod>2024-01-02</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://hcbc31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/</loc>
-    <lastmod>2024-01-02</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -190,7 +199,7 @@
   
   <url>
     <loc>https://hcbc31th.github.io/categories/%E5%B9%B9%E4%BB%8B/</loc>
-    <lastmod>2024-01-02</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
