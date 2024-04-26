@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="關於我們                      .happy{           width: 800px;           margin: 50px auto;           border:solid 1px white;           overflow: hidden; &#x2F;* 避免長方框下面顯示不正常 *&#x2F;         }         .bdcard{">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="hcbc">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://github.com/HCBC31th/HCBC31th.github.io/about/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="關於我們                      .happy{           width: 800px;           margin: 50px auto;           border:solid 1px white;           overflow: hidden; &#x2F;* 避免長方框下面顯示不正常 *&#x2F;         }         .bdcard{">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="https://github.com/HCBC31th/HCBC31th.github.io/about/index.html">
@@ -27,73 +39,691 @@
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/HCBC31th/img2/blob/main/avatar.png?raw=true">
-  
-    <link rel="alternate" href="/HCBC31th/HCBC31th.github.io/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/HCBC31th/HCBC31th.github.io/favicon.png">
-  
-  
-  
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/HCBC31th/HCBC31th.github.io/images/The%20Origin%20Of%20Life%20(convert.io).webp" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/HCBC31th/HCBC31th.github.io/images/The%20Origin%20Of%20Life%20(convert.io).webp">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/HCBC31th/HCBC31th.github.io/images/The%20Origin%20Of%20Life%20(convert.io).webp">
+    <!--- Page Info-->
+    
+    <title>
+        
+        新竹高中生研社
+    </title>
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+        <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/anime.min.js"></script>
+
+    <h1 class="ml13">
+        新竹高中生研社
+    </h1>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+
+        anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100,0],
+                translateZ: 0,
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+            targets: '.ml13 .letter',
+            translateY: [0,-100],
+            opacity: [1,0],
+            easing: "easeInExpo",
+            duration: 1200,
+            delay: (el, i) => 100 + 30 * i
+        });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            hidePreloaderAfterTimeout(1000); // Hide after 1000 milliseconds once the window has loaded
+        });
+
+        // Backup failsafe: Hide preloader after a maximum of 5000 milliseconds, regardless of the window load event
+        hidePreloaderAfterTimeout(5000);
+
+        function hidePreloaderAfterTimeout(delay) {
+            setTimeout(function () {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                setTimeout(function () {
+                    preloader.style.display = 'none';
+                }, 200);
+            }, delay);
+        }
+    </script>
+</div>
+    
+
+    
 <link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fancybox/jquery.fancybox.min.css">
 
-  
-  
+    
+        
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fonts/fonts.css">
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fonts/Satoshi/satoshi.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"github.com","root":"/HCBC31th/HCBC31th.github.io/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推薦閱讀","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":["這裡是新竹高中生研社的網站"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"新貼文":{"path":"/archives","icon":"fa-regular fa-archive"},"關於我們":{"icon":"fa-light fa-face-awesome","path":"/about"},"友社OWO":{"path":"/friends","icon":"fa-regular fa-heart"},"活動":{"path":"/Actives","icon":"fa-duotone fa-chart-network"},"相册":{"icon":"fa-solid fa-image","path":"/masonry"},"連結":{"icon":"fa-regular fa-link","submenus":{"教學教材(kuan)":"https://www.canva.com/design/DAFrsd7asxo/OgGNTv2-jVp8JFGcUPopTw/view","教學教材(wei)":"/link2","第一節簡報":"https://www.canva.com/design/DAFsuYgv8MM/-YEbTqZXloinbU1PRkdUHg/edit?utm_content=DAFsuYgv8MM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":{"新貼文":{"path":"/archives","icon":"fa-regular fa-archive"},"標籤":{"path":"/tags","icon":"fa-regular fa-tags"},"分類":{"path":"/categories","icon":"fa-regular fa-folder"},"說說":{"path":"/essays","icon":"fa-sharp fa-regular fa-wind-turbine fa-spin"},"問答":{"path":"https://hcbc-server-lagzahjm8-alberthsieh0606.vercel.app/","icon":"fa-solid fa-cloud-question fa-beat"}}},"article_date_format":"auto","categories":{"enable":true,"limit":30},"tags":{"enable":true,"limit":30}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":true};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/regular.min.css">
+
+    
+        
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/thin.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/light.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/duotone.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/fontawesome/sharp-solid.min.css">
+
+    
 <meta name="generator" content="Hexo 7.2.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/HCBC31th/HCBC31th.github.io/" id="logo">Hexo</a>
-      </h1>
-      
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/HCBC31th/HCBC31th.github.io/">
+                
+                新竹高中生研社
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/HCBC31th/HCBC31th.github.io/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/HCBC31th/HCBC31th.github.io/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    新貼文
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="active"
+                                   href="/HCBC31th/HCBC31th.github.io/about"
+                                        >
+                                    <i class="fa-light fa-face-awesome fa-fw"></i>
+                                    關於我們
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/HCBC31th/HCBC31th.github.io/friends"
+                                        >
+                                    <i class="fa-regular fa-heart fa-fw"></i>
+                                    友社OWO
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/HCBC31th/HCBC31th.github.io/Actives"
+                                        >
+                                    <i class="fa-duotone fa-chart-network fa-fw"></i>
+                                    活動
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/HCBC31th/HCBC31th.github.io/masonry"
+                                        >
+                                    <i class="fa-solid fa-image fa-fw"></i>
+                                    相册
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-link fa-fw"></i>
+                                    連結
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://www.canva.com/design/DAFrsd7asxo/OgGNTv2-jVp8JFGcUPopTw/view">
+                                                    教學教材(KUAN)
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="/HCBC31th/HCBC31th.github.io/link2">
+                                                    教學教材(WEI)
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://www.canva.com/design/DAFsuYgv8MM/-YEbTqZXloinbU1PRkdUHg/edit?utm_content=DAFsuYgv8MM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                                                    第一節簡報
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/HCBC31th/HCBC31th.github.io/">Home</a>
-        
-          <a class="main-nav-link" href="/HCBC31th/HCBC31th.github.io/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/HCBC31th/HCBC31th.github.io/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/HCBC31th/HCBC31th.github.io"></form>
-      </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/HCBC31th/HCBC31th.github.io/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/HCBC31th/HCBC31th.github.io/archives"
+                        >
+                            <span>
+                                新貼文
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/HCBC31th/HCBC31th.github.io/about"
+                        >
+                            <span>
+                                關於我們
+                            </span>
+                            
+                                <i class="fa-light fa-face-awesome fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/HCBC31th/HCBC31th.github.io/friends"
+                        >
+                            <span>
+                                友社OWO
+                            </span>
+                            
+                                <i class="fa-regular fa-heart fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/HCBC31th/HCBC31th.github.io/Actives"
+                        >
+                            <span>
+                                活動
+                            </span>
+                            
+                                <i class="fa-duotone fa-chart-network fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/HCBC31th/HCBC31th.github.io/masonry"
+                        >
+                            <span>
+                                相册
+                            </span>
+                            
+                                <i class="fa-solid fa-image fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-連結"
+                        >
+                            <span>
+                                連結
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-連結">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://www.canva.com/design/DAFrsd7asxo/OgGNTv2-jVp8JFGcUPopTw/view">教學教材(KUAN)</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           href="/HCBC31th/HCBC31th.github.io/link2">教學教材(WEI)</a>
+                                    </div>
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://www.canva.com/design/DAFsuYgv8MM/-YEbTqZXloinbU1PRkdUHg/edit?utm_content=DAFsuYgv8MM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">第一節簡報</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/HCBC31th/HCBC31th.github.io/tags"
+                        >
+                            <span>標籤</span>
+                            <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/HCBC31th/HCBC31th.github.io/categories"
+                        >
+                            <span>分類</span>
+                            <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/HCBC31th/HCBC31th.github.io/essays"
+                        >
+                            <span>說說</span>
+                            <i class="fa-sharp fa-regular fa-wind-turbine fa-spin fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           target="_blank" rel="noopener" href="https://hcbc-server-lagzahjm8-alberthsieh0606.vercel.app/"
+                        >
+                            <span>問答</span>
+                            <i class="fa-solid fa-cloud-question fa-beat fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/HCBC31th/HCBC31th.github.io/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/HCBC31th/HCBC31th.github.io/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/HCBC31th/HCBC31th.github.io/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
     </div>
-  </div>
+
+    <div class="window-mask"></div>
+
 </header>
 
-      <div class="outer">
-        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/HCBC31th/HCBC31th.github.io/about/index.html" class="article-date">
-  <time class="dt-published" datetime="2023-08-24T13:06:47.000Z" itemprop="datePublished">2023-08-24</time>
-</a>
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="page-template-container">
     
-  </div>
-  <div class="article-inner">
     
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <div style="text-align:center;">
+    <div class="page-template-content markdown-body">
+        
+            <div style="text-align:center;">
   <h1>關於我們</h1>
 </div>
 <html>
@@ -202,136 +832,293 @@
                 ><br><a class="button  [large]" target="_blank" rel="noopener" href='http://digimuse.nmns.edu.tw/Default.aspx?tabid=79' title='自然科學博物館-→'><i class='fa-sharp fa-solid fa-hashtag'></i> 自然科學博物館-→</a></p></div></div></div>
 
 
-      
+        
     </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/HCBC31th/HCBC31th.github.io/about/index.html" data-id="clvh0dqg20009dcu3633599dm" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-
-</section>
+    <div class="page-template-comments">
         
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/HCBC31th/HCBC31th.github.io/categories/%E5%B9%B9%E4%BB%8B/">幹介</a></li></ul>
     </div>
-  </div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/HCBC31th/HCBC31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/" rel="tag">生物新知</a></li><li class="tag-list-item"><a class="tag-list-link" href="/HCBC31th/HCBC31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/" rel="tag">跨社團活動</a></li></ul>
-    </div>
-  </div>
+                
 
+            </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/HCBC31th/HCBC31th.github.io/tags/%E7%94%9F%E7%89%A9%E6%96%B0%E7%9F%A5/" style="font-size: 10px;">生物新知</a> <a href="/HCBC31th/HCBC31th.github.io/tags/%E8%B7%A8%E7%A4%BE%E5%9C%98%E6%B4%BB%E5%8B%95/" style="font-size: 10px;">跨社團活動</a>
-    </div>
-  </div>
+            
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/HCBC31th/HCBC31th.github.io/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/HCBC31th/HCBC31th.github.io/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/HCBC31th/HCBC31th.github.io/archives/2023/09/">September 2023</a></li></ul>
-    </div>
-  </div>
+        </div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
         
-          <li>
-            <a href="/HCBC31th/HCBC31th.github.io/2024/04/26/hello-world/">Hello World</a>
-          </li>
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/HCBC31th/HCBC31th.github.io/">hcbc</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        8 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
         
-          <li>
-            <a href="/HCBC31th/HCBC31th.github.io/2024/04/26/page/">賞鯨回應表單</a>
-          </li>
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
         
-          <li>
-            <a href="/HCBC31th/HCBC31th.github.io/2023/10/31/%E5%9B%9B%E6%A0%A1%E4%BA%94%E7%A4%BE%E8%BF%8E%E6%96%B0/">四校五社迎新</a>
-          </li>
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.1</a></span>
+        </div>
         
-          <li>
-            <a href="/HCBC31th/HCBC31th.github.io/2023/09/14/%E5%B9%B9%E4%BB%8B-%E6%95%99%E5%AD%B8WEI/">幹介-教學WEI</a>
-          </li>
         
-          <li>
-            <a href="/HCBC31th/HCBC31th.github.io/2023/09/04/%E5%A4%8F%E6%97%A5%E3%80%81%E5%80%89%E9%BC%A0%E3%80%81%E4%B8%AD%E6%9A%91/">夏日、倉鼠、中暑</a>
-          </li>
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
         
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
 </footer>
-
+        </div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/HCBC31th/HCBC31th.github.io/" class="mobile-nav-link">Home</a>
-  
-    <a href="/HCBC31th/HCBC31th.github.io/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
     
 
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
 
-<script src="/HCBC31th/HCBC31th.github.io/js/jquery-3.6.4.min.js"></script>
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/Swup.min.js"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/utils.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/main.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/runtime.js"></script>
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/HCBC31th/HCBC31th.github.io/assets/odometer-theme-minimal.css">
+
 
 
 
   
-<script src="/HCBC31th/HCBC31th.github.io/fancybox/jquery.fancybox.min.js"></script>
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/Typed.min.js"></script>
+
+  
+<script src="/HCBC31th/HCBC31th.github.io/js/plugins/typed.js" type="module"></script>
 
 
 
 
-<script src="/HCBC31th/HCBC31th.github.io/js/script.js"></script>
+
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/libs/minimasonry.min.js"></script>
+
+    
+<script src="/HCBC31th/HCBC31th.github.io/js/plugins/masonry.js" type="module"></script>
 
 
 
 
 
-  </div>
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/HCBC31th/HCBC31th.github.io/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/layouts/toc.js" type="module"></script>
+
+<script src="/HCBC31th/HCBC31th.github.io/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
 </body>
 </html>
